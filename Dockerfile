@@ -29,7 +29,7 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 
 # Port ochish
-EXPOSE 8080
+EXPOSE 8081
 
 # Ilovani ishga tushirish
 ENTRYPOINT ["./main"]
