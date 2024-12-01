@@ -58,5 +58,5 @@ jobs:
           docker pull ${{ secrets.DOCKERHUB_USERNAME }}/go-docker-demo:latest
           docker stop go-docker-demo || true
           docker rm go-docker-demo || true
-          docker run -d --name go-docker-demo -p 1222:1222 ${{ secrets.DOCKERHUB_USERNAME }}/go-docker-demo:latest
+          docker run -d --name go-docker-demo -p 8081:8081 ${{ secrets.DOCKERHUB_USERNAME }}/go-docker-demo:latest
 # end
