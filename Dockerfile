@@ -1,5 +1,5 @@
 # Build bosqichi
-FROM golang:1.22-alpine AS builder
+FROM golang:1.22.4-alpine  AS builder
 
 # Ishchi katalog
 WORKDIR /app
