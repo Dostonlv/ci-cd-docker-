@@ -59,3 +59,4 @@ jobs:
           docker stop go-docker-demo || true
           docker rm go-docker-demo || true
           docker run -d --name go-docker-demo -p 8080:8080 ${{ secrets.DOCKERHUB_USERNAME }}/go-docker-demo:latest
+#
