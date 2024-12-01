@@ -4,16 +4,12 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/Dostonlv/ci-cd-docker/handlers"
 )
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8081"
-	}
+	port := "8081"
 
 	http.HandleFunc("/", handlers.HelloHandler)
 	http.HandleFunc("/health", handlers.HealthCheckHandler)
