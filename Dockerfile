@@ -5,7 +5,7 @@ FROM golang:1.22.4-alpine  AS builder
 WORKDIR /app
 
 # Go module fayllarini nusxalash
-COPY go.mod go.sum ./
+COPY go.mod  ./
 
 # Dependency larni yuklab olish
 RUN go mod download
